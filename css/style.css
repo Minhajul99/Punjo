@@ -1,0 +1,1145 @@
+/*----------------------------------------------------------------------------------
+
+	Template Name: Portfolio Personal Website
+	Template URL: http://www.abm.com
+	Description: Personal Website
+	Author: Md. Majidul Islam
+	Author URL: http://www.ab-majid.info
+	License: GNU General Public 
+	Version: 2020.0.1
+	Tags: ;
+-----------------------------------------------------------------------------------
+
+	1. Typography  10-50
+	2. Header Area  51-150
+	3. Getting Started
+	4. Design Area
+	5. Community Area
+	6. Subscribe Area
+	7. Download Area
+	8. Footer Area
+-----------------------------------------------------------------------------------*/
+/*defult style*/
+
+body{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+p{
+	color: #616161;
+}
+
+a{
+	text-decoration: none;
+}
+
+h3{
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3::after{
+	content: "";
+	clear: both;
+	display: block;
+	height: 5px;
+	width: 30px;
+	background-color: #f39c12;
+	position: absolute;
+	bottom: -57%;
+	left: 48.5%;
+}
+
+.hr{
+	border: none;
+	height: 1px;
+	width: 350px;
+	background-color: #f39c12;
+}
+
+
+
+/*Header style*/
+.n_nav{
+	background-color: rgba(0, 0, 0, .3);
+}
+
+.n_nav .menu{
+	margin-left: 10%;
+	padding: 20px 0;
+}
+
+.n_nav a{
+	text-transform: capitalize;
+	text-decoration: none;
+}
+
+.n_nav a:hover{
+	border-bottom: 2px solid #f39c12;
+	padding-bottom: 39px;	
+	color: #f39c12;
+}
+
+.n_nav .menu .span{
+	color: #f39c12;
+	font-size: 35px;
+}
+
+.n_hero .n_slide img{
+	height: 100vh;
+}
+
+.n_hero .n_slide .navigator{
+	border: 1px solid black;
+	padding: 5px;
+}
+
+.n_hero .n_slide{
+	position: relative;
+}
+
+.n_header .n_hero .content{
+	text-transform: uppercase;
+	position: absolute;
+	top: 40%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+
+.n_header .n_hero .content .span{
+	color: #f39c12;
+	font-size: 35px;
+	float: right;
+	padding-right: 25%;
+
+}
+
+.n_header .n_hero .content p{
+	font-size: 35px;
+	padding-bottom: 80px;
+	margin: 0;
+
+}
+
+.n_header .n_hero .content button{
+	padding: 8px 25px;
+	text-transform: uppercase;
+	font-size: 10px;
+	margin: 0 3px;
+}
+
+.n_header .n_hero .content .left{
+	border: 1px solid white;
+	background: transparent;
+}
+
+.n_header .n_hero .content .right{
+	border: 1px solid #f39c12;
+	background: #f39c12;
+}
+
+.n_hero .carousel-item::after{
+	content: "";
+	clear: both;
+	display: block;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, .4);
+	top: 0;
+	left: 0;
+}
+
+.n_hero .left .carousel-control-prev{
+	width: 50px;
+    height: 50px;
+    background-color: #bda54f3b;
+    border: 1px solid #ffff;
+    top: calc(50% - 25px);
+    opacity: 0.8;
+    border-radius: 20%;
+}
+
+.n_hero .right .carousel-control-next{
+	width: 50px;
+    height: 50px;
+    background-color: #bda54f3b;
+    border: 1px solid #bda54f;
+    top: calc(50% - 25px);
+    opacity: 0.8;
+    border-radius: 20%;
+}
+
+.n_hero .left .carousel-control-prev:hover{
+	color:black;
+}
+
+
+.togglesearch{
+  background: #E8E8E4;
+  position: absolute;
+  top: 54px;
+  right: 28.7%;
+  width: 350px;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-top:4px solid #D80B15;
+  display: none;
+}
+.togglesearch:before{
+  content: "";
+  position: absolute;
+  top: -32px;
+  right: 13px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid #D80B15;
+}
+.togglesearch input[type="text"]{
+  width: 200px;
+  padding: 5px 10px;
+  margin-left: 23px;
+  border: 1px solid #D80B15;
+  outline: none;
+}
+.togglesearch input[type="button"]{
+  width: 80px;
+  padding: 5px 0;
+  background: #D80B15;
+  color: #fff;
+  margin-left: -6px;
+  border: 1px solid #D80B15;
+  outline: none;
+  cursor: pointer;
+}
+
+.n-slide .left a{
+	width: 50px;
+	height: 50px;
+	background-color: #000000;
+	border: 1px solid #bda54f;
+	top: calc(50% - 25px);
+	opacity: 0.8;
+	border-radius: 20%;
+
+}
+.right .carousel-control-next-icon{
+
+}
+
+
+
+
+
+/*About Me style*/
+
+.about_n{
+	padding-top: 10%;
+	display: flex;
+}
+
+.about_n img{
+	width: 100%;
+	padding: 0;
+}
+
+.about_n .content p{
+	text-align: justify;
+	padding: 40px 10%;
+	margin: 0;
+}
+
+.content .skill{
+	padding: 0 10%;
+}
+
+.content .skill h4{
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.content .skill .rate{
+	display: flex;
+}
+
+.content .skill .rate h4{
+	border: 1px solid #f39c12;
+	background: #f39c12;
+	color: white;
+	font-size: 12px;
+	font-weight: normal;
+	margin: 0;
+	padding: 1px 2px;
+	position: relative;
+	z-index: 1;
+}
+
+.content .skill .rate h4::after{
+	content: "";
+	clear: both;
+	display: block;
+	position: absolute;
+	height: 8px;
+	width: 8px;
+	bottom: 3px;
+	left: -5px;
+	background-color: #f39c12;
+	transform:rotate(130deg);
+	z-index: -1;
+}
+
+.content .skill .out{
+	height: 10px;
+	width: 80%;
+	background-color: #ececec;
+	color: white;
+	margin-right: 40px;
+	position: relative;
+}
+
+.content .skill .out .in{
+	height: 10px;
+	background-color: #f39c12;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 80%;
+}
+.content .skill .out .in1{
+	height: 10px;
+	background-color: #f39c12;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 60%;
+}
+.content .skill .out .in2{
+	height: 10px;
+	background-color: #f39c12;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 70%;
+}
+.content .skill .out .in3{
+	height: 10px;
+	background-color: #f39c12;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+}
+.content .skill .out .in4{
+	height: 10px;
+	background-color: #f39c12;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 90%;
+}
+
+
+/*My Service css*/
+
+.n_service{
+	overflow: hidden;
+	padding: 10% 0;
+}
+
+.n_service .service_head{
+	padding-bottom: 5%;
+}
+
+.n_service .service{
+	padding: 0 22%;
+	float: left;
+}
+
+.n_service .service .kind_of_service{
+	width: 23.74%;
+	margin: 4px;
+	padding: 25px 15px;
+	float: left;
+	border: 1px solid #efefef;
+	text-align: center;
+	position: relative;
+}
+
+.n_service .service .kind_of_service::before,
+.n_service .service .kind_of_service::after{
+	content: '';
+  	position: absolute;
+  	background: #f39c12;
+}
+
+.n_service .service .kind_of_service:hover::before{
+  width: 20px;
+  height: 2px;
+  top: -1px;
+  left: 0;
+  z-index: 1;
+}
+
+.n_service .service .kind_of_service:hover::after{
+  height: 2px;
+  width: 20px;
+  left: -11px;
+  top: 8px;
+  transform: rotate(90deg);
+  z-index: 1;
+}
+
+.n_service .service .kind_of_service:hover{
+	background: linear-gradient(135deg, transparent 20%, #f39c12 0)!important;
+}
+
+.n_service .service .kind_of_service:hover,
+.n_service .service .kind_of_service:hover a{
+	background: #ffffff;
+	color: #f39c12;
+}
+
+.n_service .service .kind_of_service:hover,
+.n_service .service .kind_of_service:hover h2,
+.n_service .service .kind_of_service:hover p{
+	color: white;
+}
+
+.n_service .service .kind_of_service a{
+	color: white;
+	padding: 10px;
+	background: #919190;
+	font-size: 15px;
+	border-radius: 50%;
+}
+
+.n_service .service .kind_of_service h2{
+	font-size: 14px;
+	font-weight: bold;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	margin: 0;
+	color: #919190;
+}
+
+.n_service .service .kind_of_service p{
+	font-size: 10px;
+	margin: 0;
+}
+
+
+
+/*My statistic css*/
+
+.n_statistic{
+	position: relative;
+	overflow: hidden;
+}
+
+.n_statistic img{
+	width: 100%;
+	height: auto;
+}
+
+.n_statistic .statistic_con{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .7);
+	color: white;
+}
+
+.n_statistic .statistic_con .statistic_head{
+	padding: 6% 0;
+}
+
+.n_statistic .statistic_con .content{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 1;
+}
+
+.n_statistic .statistic_con .content .stat_con{
+	text-align: center;
+	margin: 0 5%;
+}
+
+.n_statistic .statistic_con .content .stat_con h5{
+	padding-bottom: 25px;
+	font-size: 25px;
+}
+
+.n_statistic .statistic_con .content .stat_con a{
+	border: 1px solid #ffffff;
+	background: #ffffff;
+	color: #f39c12;
+	padding: 15px 20px;
+	border-radius: 50%;
+	font-size: 30px;
+}
+.n_statistic .statistic_con .content .stat_con .s_a{
+	border: 1px solid #ffffff;
+	background: #ffffff;
+	color: #f39c12;
+	padding: 15px;
+	border-radius: 50%;
+	font-size: 30px;
+}
+
+.n_statistic .statistic_con .content .stat_con p{
+	padding-top: 30px;
+	color: #ffffff;
+	text-transform: capitalize;
+}
+
+.n_statistic .statistic_con .content .s_hr{
+	justify-content: center;
+	border: none;
+	height: 2px;
+	width: 30%;
+	background-color: #ffffff;
+	position: absolute;
+	top: 39%;
+	left: 36%;
+	z-index: -1;
+}
+
+
+
+
+
+/*My Work css*/
+
+.n_work{
+	padding-top: 70px;
+	overflow: hidden;
+}
+
+.n_work .work_menu{
+	padding: 50px;
+}
+
+.n_work .work_menu ul{
+	display: flex;
+	justify-content: center;
+}
+
+.n_work .work_menu ul li a:hover{
+	background: #f39c12;
+	color: white;
+}
+
+.n_work .work_menu ul li a{
+	padding: 10px;
+	margin: 5px;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+}
+
+.n_work .work_content .n_top{
+	padding: 10px;
+}
+
+.n_work .work_content .n_top .pic{
+	margin: 10px;
+	width: 31.82%;
+	float: left;
+	position: relative;
+}
+
+.n_work .work_content .n_top .pic:hover .search{
+	content: "";
+	clear: both;
+	display: block;
+	background-color: rgba(0, 0, 0, .5);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.n_work .work_content .n_top .pic .overlay1 a{
+	padding: 15px;
+	border-radius: 50%;
+	background: #f39c12;
+	color: white;
+}
+
+.n_work .work_content .n_top .pic .overlay1{
+	display: none;
+	background-color: transparent;
+    position: absolute;
+    top: 6%;
+    bottom: 0;
+    left: 87%;
+    right: 0;
+    color: white;
+}
+
+.n_work .work_content .n_top .pic .overlay2 h4{
+	font-size: 12px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.n_work .work_content .n_top .pic .overlay2 p{
+	font-size: 11px;
+	padding: 0;
+	margin-left: 15px;
+	margin-bottom: 0;
+}
+
+.n_work .work_content .n_top .pic .overlay2{
+	display: none;
+	background-color: #232323;
+    position: absolute;
+    top: 84%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.n_work .work_content .n_top .pic:hover .overlay1{
+	display: block;
+	z-index: 2;
+}
+
+.n_work .work_content .n_top .pic:hover .overlay2{
+	display: block;
+	z-index: 2;
+}
+
+.n_work .work_content .n_top .pic img{
+	width: 100%;
+	height: auto;
+}
+
+.n_pic{
+	overflow: hidden;
+}
+
+.n_pic .content{
+	padding: 10px;
+}
+
+.n_pic .content .pic{
+	margin: 0 10px;
+	width: 23.49%;
+	float: left;
+	position: relative;
+}
+
+.n_pic .content .pic:hover .search{
+	content: "";
+	clear: both;
+	display: block;
+	background-color: rgba(0, 0, 0, .5);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+
+.n_pic .content .pic .overlay1 a{
+	padding: 15px;
+	border-radius: 50%;
+	background: #f39c12;
+	color: white;
+}
+
+.n_pic .content .pic .overlay1{
+	display: none;
+	background-color: transparent;
+    position: absolute;
+    top: 7%;
+    bottom: 0;
+    left: 83%;
+    right: 0;
+    color: white;
+}
+
+.n_pic .content .pic .overlay2 h4{
+	font-size: 12px;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.n_pic .content .pic .overlay2 p{
+	font-size: 11px;
+	padding: 0;
+	margin-left: 15px;
+	margin-bottom: 0;
+}
+
+.n_pic .content .pic .overlay2{
+	display: none;
+	background-color: #232323;
+    position: absolute;
+    top: 80%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+}
+
+.n_pic .content .pic:hover .overlay1{
+	display: block;
+	z-index: 2;
+}
+
+.n_pic .content .pic:hover .overlay2{
+	display: block;
+	z-index: 2;
+}
+
+
+.n_pic .content .pic img{
+	width: 100%;
+	height: auto;
+}
+
+
+/*Recent story css style*/
+
+.n_story{
+	padding: 100px 0;
+	overflow: hidden;
+}
+
+.n_story .slider{
+	display: flex;
+	justify-content: center;
+	padding: 30px 15%;
+}
+
+.n_story .n_card{
+	display: flex;
+	margin-right: 10px;
+	height: 190px;
+}
+
+.n_story .n_card h5{
+	font-size: 10px;
+	color: #9d9c9c;
+}
+.n_story .n_card h6{
+	font-size: 12px;
+	color: #f39c12;
+}
+.n_story .n_card p{
+	font-size: 10px;
+	color: #9d9c9c;
+}
+
+.n_story .n_card a{
+	padding: 8px 10px;
+	text-decoration: none;
+	background: #282828;
+	color: white;
+	font-size: 10px;
+	text-transform: capitalize;
+}
+
+.n_story .n_card2{
+	display: flex;
+	margin-left: 10px;
+	height: 190px;
+}
+
+.n_story .n_card2 h5{
+	font-size: 10px;
+	color: #9d9c9c;
+}
+.n_story .n_card2 h6{
+	font-size: 12px;
+	color: #f39c12;
+}
+.n_story .n_card2 p{
+	font-size: 10px;
+	color: #9d9c9c;
+}
+
+.n_story .n_card2 a{
+	padding: 8px 10px;
+	text-decoration: none;
+	background: #aaaaaa;
+	color: white;
+	font-size: 10px;
+	text-transform: capitalize;
+}
+
+.n_story .arrow{
+	display: flex;
+	justify-content: center;
+}
+
+.n_story .arrow .a{
+	color: black;
+}
+
+.n_story .arrow a{
+	color: #aaaaaa;
+	font-size: 8px;
+	margin: 2px;
+}
+
+
+/*Life changing story css*/
+
+
+.n_life{
+	padding: 3%;
+	display: flex;
+	background: #262626;
+	overflow: hidden;
+}
+
+
+.n_life .img{
+	width: 40%;
+	padding: 0;
+}
+
+.n_life .img img{
+	width: 100%;
+}
+
+.n_life .content{
+	width: 60%;
+	padding: 7% 3%;
+	overflow: hidden;
+}
+
+.n_life .content p{
+	text-align: justify;
+	color: white;
+	padding-top: 40px;
+}
+
+.n_life .content h4{
+	position: relative;
+	text-transform: uppercase;
+	color: white;
+	padding: 0;
+}
+
+.n_life .content h4::after{
+	content: "";
+	clear: both;
+	display: block;
+	height: 5px;
+	width: 30px;
+	background-color: #f39c12;
+	position: absolute;
+	bottom: -58%;
+	left: 18.5%;
+}
+
+.hr2{
+	border: none;
+	height: 1px;
+	width: 278px;
+	background-color: #f39c12;
+	float: left;
+	margin: 5px 0;
+}
+
+
+/*Client feedback css*/
+
+.n_feedback{
+	padding: 10% 5%;
+	overflow: hidden;
+}
+
+.n_feedback .f_content{
+	padding: 0 15%;
+}
+
+.n_feedback .content{
+	display: flex;
+	justify-content: center;
+	padding-top: 5%;
+	padding-bottom: 20px;
+
+}
+
+.n_feedback .content .n_comment{
+	background-color: #f6f6f6;;
+	position: relative;
+	padding: 20px;
+	color: white;
+	width: 40%;
+	margin: 0 20px;
+}
+
+.n_feedback .content .n_comment::after{
+	content: "";
+	clear: both;
+	display: block;
+	position: absolute;
+	height: 25px;
+	width: 25px;
+	bottom: -10%;
+	left: 20%;
+	background-color: #f6f6f6;
+	transform:rotate(130deg);
+}
+
+.n_feedback .content .n_comment h6{
+	color: #9d9c9c;
+	font-size: 12px;
+}
+.n_feedback .content .n_comment p{
+	color: #9d9c9c;
+	font-size: 10px;
+	margin: 0;
+}
+
+.n_feedback .n_profile{
+	display: flex;
+	justify-content: center;
+}
+
+.n_feedback .n_profile .profile{
+	margin: 0 11%;
+}
+
+.n_feedback .n_profile .profile p{
+	color: #9d9c9c;
+	font-size: 10px;
+	padding: 14% 0;
+	margin: 0;
+	padding-left: 10px;
+}
+
+.n_feedback .n_profile .profile .prof{
+	display: flex;
+	justify-content: center;
+}
+
+
+.n_feedback .n_profile .profile .prof1{
+	display: flex;
+	justify-content: center;
+}
+
+.span{
+	color: #f39c12;
+	font-size: 12px;
+}
+
+
+.n_feedback .arrow{
+	display: flex;
+	justify-content: center;
+}
+
+.n_feedback .arrow .a{
+	color: black;
+}
+
+.n_feedback .arrow a{
+	color: #aaaaaa;
+	font-size: 8px;
+	margin: 2px;
+	padding-top: 5%;
+}
+
+/*this is latest tweet css*/
+
+.n_lt{
+	overflow: hidden;
+	position: relative;
+}
+.n_lt img{
+	width: 100%;
+}
+
+.n_lt_content p{
+	font-size: 12px;
+	color: white;
+	padding: 4% 22.57%;
+	text-align: center;
+}
+
+
+.n_lt .n_lt_content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgb(0,0,0,.4);
+	width: 100%;
+	height: 100%;
+	padding: 0 10%;
+	color: white;
+}
+
+.n_lt .n_lt_content .n_lt_head{
+	padding-top: 8%
+}
+
+
+/*this is get in touch css*/
+
+
+.n_touch{
+	overflow: hidden;
+	padding: 10%;
+}
+
+.n_touch .touch_content{
+	padding: 2% 25.15%;
+}
+
+.n_touch .touch_content p{
+	font-size: 12px;
+}
+
+.n_form{
+	padding: 0 10%;
+	padding-top: 5%;
+}
+.form-handle{
+	margin-bottom: 40px
+}
+.form-sign{
+	width:100%;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid #eaeaea;
+}
+
+.text-area{
+	margin-top: 30px
+}
+
+.message-area{
+	width: 100%;
+	border-left: 0px;
+	border-top: 0px;
+	border-right: 0px;
+	border-bottom: 2px solid #eaeaea;
+}
+
+.touch_btn{
+	background: #f39c12;
+	color: white;
+	border: 1px solid #f39c12;
+	padding: 5px 10px;
+	margin-top: 20px;
+ 	
+}
+input:focus{
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #f39c12;
+	outline: 0;
+}
+
+textarea:focus{
+	border-left: 0;
+	border-right: 0;
+	border-top: 0;
+	border-bottom: 1px solid #f39c12;
+	outline: 0;
+}
+
+/*this is google map css*/
+
+.n_map{
+	position: relative;
+}
+
+.n_map .content{
+	border: 1px solid #f5b041;
+	padding: 20px;
+	background: #f5b041;
+	width: 14.5%;
+	position: absolute;
+	top: 20%;
+	left: 60%;
+}
+
+.n_map .content p{
+	padding: 5px;
+	font-size: 12px;
+	color: white;
+	margin: 0;
+}
+
+/*this is follow me css*/
+
+.n_follow{
+	padding: 5% 0;
+}
+
+.n_follow .social{
+	padding: 4% 0;
+}
+
+.n_follow .social ul{
+	display: flex;
+	justify-content: center;
+}
+
+.n_follow .social ul li{
+	margin: 5px;
+}
+
+.n_follow .social ul li a{
+	padding: 10px 14px;
+	font-size: 12px;
+	border: 1px solid #ebebeb;
+	color: #f39c12;
+}
+
+.n_follow .social ul li a:hover{
+	background: #f39c12;
+	color: white;
+}
+
+
+/*This is footer css*/
+
+.n_footer{
+	background: #f39c12;
+}
+
+.n_footer .footer_content p{
+	padding: 2% 0;
+	text-align: center;
+	font-size: 11px;
+}
+
+.n_footer .footer_content .f_span{
+	color: white;
+}
